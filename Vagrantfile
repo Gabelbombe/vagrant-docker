@@ -15,9 +15,9 @@ Vagrant.configure(2) do | config |
     # Define the location of the Vagrantfile for the host VM
     # Comment out this line to use default host VM that is
     # based on boot2docker
-    docker.vagrant_vagrantfile  = "host/Vagrantfile"
-    docker.name                 = 'nginx-container'   # Specify a friendly name for the Docker container
-    docker.image                = "nginx"             # Specify the Docker image to use
+    docker.vagrant_vagrantfile  = 'host/Vagrantfile'
+    docker.name                 = 'tengu-container'   # Specify a friendly name for the Docker container
+    docker.image                = 'tengu'             # Specify the Docker image to use
     docker.ports                = [                   # Specify port mappings, if omitted, no ports are mapped!
       '80:80',
       '443:443'
